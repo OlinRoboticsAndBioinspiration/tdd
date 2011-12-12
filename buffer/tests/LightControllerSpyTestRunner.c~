@@ -1,0 +1,8 @@
+/*LightSchedulerSpyTestRunner.c*/
+
+#include "unity_fixture.h"
+
+TEST_GROUP_RUNNER(LightControllerSpy)
+{
+  RUN_TEST_CASE(LightControllerSpy,Create);
+}

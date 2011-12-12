@@ -1,0 +1,6 @@
+Unity test run 1 of 1
+...tests/BufferTest.c:56:TEST(Buffer, bufferPushingElementAddsElementToBuffer):FAIL: Expected 0 Was 8
+
+-----------------------
+3 Tests 1 Failures 0 Ignored
+FAIL

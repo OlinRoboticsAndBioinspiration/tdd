@@ -1,0 +1,3 @@
+/*LightController.h*/
+
+void LightController_Create(void);

@@ -1,0 +1,46 @@
+#include "unity_fixture.h"
+#include <stdint.h>
+#include "buffer.h"
+
+
+
+static void RunAllTests(void) {
+    RUN_TEST_GROUP(Buffer);
+}
+
+int main(int argc, char * argv[]) {
+    return UnityMain(argc, argv, RunAllTests);
+}
+
+
+
+TEST_GROUP(Buffer);
+
+
+TEST_SETUP(Buffer)
+{   
+ unsigned char data[50];
+ cBuffer bufferPointer;
+ unsigned char* dataPtr = data;
+ unsigned short size = 10;
+ 
+ bufferInit((cBuffer*)&bufferPointer,dataPtr,size);
+ cBuffer buffer = *cBufffer
+}
+TEST_TEAR_DOWN(Buffer)
+{
+    
+}
+
+TEST(Buffer, BufferAcceptsZeroAsSize)
+{
+  size = 0;
+  bufferInit((cBuffer*)&bufferPointer,dataPtr,size);
+}
+
+TEST(Buffer, BufferCanPushElements)
+{  
+  
+}
+
+

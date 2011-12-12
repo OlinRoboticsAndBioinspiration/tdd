@@ -1,0 +1,15 @@
+Notes:
+dataptr is a pointer.  Data pointer.  unsigned char is a byte string
+
+int* declares a pointer
+&david retrieves the memory adress of david
+david* retrieves the data at the memory adress david
+
+cBuffer david;
+(cBuffer*)&david casts the pointer &david to be a pointer to cBuffer
+
+unsigned char data[50] ; allocates memory 50 contiguous unsigned characters, aka an array.
+
+data is a pointer
+
+ 

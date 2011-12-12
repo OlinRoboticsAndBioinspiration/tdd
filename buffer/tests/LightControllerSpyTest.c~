@@ -1,0 +1,34 @@
+/*LightControllerSpyTest*/ 
+
+
+#include "unity_fixture.h"
+#include <stdint.h>
+#include "LightControllerSpy.h"
+
+
+
+static void RunAllTests(void) {
+    RUN_TEST_GROUP(LightControllerSpy);
+}
+
+int main(int argc, char * argv[]) {
+    return UnityMain(argc, argv, RunAllTests);
+}
+
+
+TEST_GROUP(LightControllerSpy);
+
+
+TEST_SETUP(LightControllerSpy)
+{   
+  LightController_Create();
+}
+TEST_TEAR_DOWN(LightControllerSpy)
+{
+}
+
+TEST(LightControllerSpy,Create)
+{
+  TEST_ASSERT_EQUAL_INT(LIGHT_ID_UNKNOWN,LightControllerSpy_GetLastId());
+  TEST_ASSERT_EQUAL_INT(LIGHT_STATE_UNKNOWN,LightControllerSpy_GetLastState());
+}
